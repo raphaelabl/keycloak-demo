@@ -1,0 +1,7 @@
+<div *ngIf="username">Welcome username </div>
+<div *ngIf="roles.includes('customer')">
+  <app-store-nav></app-store-nav>
+</div>
+<div *ngIf="roles.includes('store-employee')">
+  <app-admin-nav></app-admin-nav>
+</div>
